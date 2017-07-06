@@ -1,5 +1,5 @@
-import { SET_FAVORITES, APPEND_FAVORITE } from '../constants'
-import { append } from 'ramda'
+import { SET_FAVORITES, APPEND_FAVORITE, DELETE_FAVORITE } from '../constants'
+import { append, slice } from 'ramda'
 
 export default (state = [], action) => {
   switch (action.type) {
@@ -7,6 +7,8 @@ export default (state = [], action) => {
       return action.payload
     case APPEND_FAVORITE:
       return append(action.payload, state)
+    case DELETE_FAVORITE:
+      return slice(action.payload, state)
     default:
       return state
   }

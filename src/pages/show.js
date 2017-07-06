@@ -5,7 +5,7 @@ import BigButton from '../components/big-button'
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { find, propEq } from 'ramda'
-import { SET_FAVORITE } from '../constants'
+import { SET_FAVORITE, DELETE_FAVORITE } from '../constants'
 import { Button } from 'jrs-react-components'
 
 class Show extends React.Component {
@@ -19,6 +19,7 @@ class Show extends React.Component {
 
   render() {
     const props = this.props
+    console.log('props', props)
     return (
       <div>
         <Header />
@@ -39,7 +40,9 @@ class Show extends React.Component {
             </a>
             <Link to="/"><BigButton>Return</BigButton></Link>
             <div className="cf">
-              <BigButton>Delete</BigButton>
+              <BigButton>
+                Delete
+              </BigButton>
             </div>
           </div>
         </main>
@@ -47,23 +50,28 @@ class Show extends React.Component {
     )
   }
 }
-//
-// function deleteItem(dispatch, getState) {
-//   const favorite = getState().favorite
-//   fetch(process.env.REACT_APP_API + '/favorites', {
-//     method: 'DELETE',
-//     header: new Headers({
-//       'Content-Type': 'application/json'
-//     }),
-//     body: JSON.stringify(favorite)
-//   }).then(favorite => )
-// }
 
-// function mapActionsToProps(dispatch) {
+// const deleteFavorite = history => (dispatch, getState) => {
+//   const favorites = getState().favorites
+//   const result = prompt('want to delete?')
+//   if (result) {
+//     fetch(process.env.REACT_APP_API + '/favorites', {
+//       method: 'DELETE',
+//       headers: new Headers({
+//         'Content-Type': 'application/json'
+//       }),
+//       body: JSON.stringify(favorites)
+//     })
+//     dispatch({ type: DELETE_FAVORITE, payload: favorites.id })
+//     history.push('/')
+//   }
+// }
+//
+// const mapActionsToProps = dispatch => {
 //   return {
-//     handleClick: e => {
+//     handleClick: history => e => {
 //       e.preventDefault()
-//       dispatch(deleteItem)
+//       dispatch(deleteFavorite(history))
 //     }
 //   }
 // }
