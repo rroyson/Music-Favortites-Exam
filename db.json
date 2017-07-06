@@ -1,3 +1,45 @@
 {
-  "favorites": []
+  "favorites": [
+    {
+      "id": "5HSdx1824FepWuf8NbG7B3",
+      "href": "https://api.spotify.com/v1/albums/5HSdx1824FepWuf8NbG7B3",
+      "name": "Saints & Sinners",
+      "poster": "https://i.scdn.co/image/f896b4651bea2a75dc1418a284473c02444c0c1c"
+    },
+    {
+      "id": "29sTacnS0qA9xri6YS8xLA",
+      "href": "https://api.spotify.com/v1/albums/29sTacnS0qA9xri6YS8xLA",
+      "name": "Superunknown (Deluxe Edition)",
+      "poster": "https://i.scdn.co/image/a2e6040d4a8b2af2c33fb608bccd1c2790caed94"
+    },
+    {
+      "id": "2BtE7qm1qzM80p9vLSiXkj",
+      "href": "https://api.spotify.com/v1/albums/2BtE7qm1qzM80p9vLSiXkj",
+      "name": "Magical Mystery Tour (Remastered)",
+      "poster": "https://i.scdn.co/image/44a8e349f4d580ce4ea15ff8b60a37b2c7595c4b"
+    },
+    {
+      "id": "1MuenT1cvvI0YCs3hsJDBE",
+      "name": "All Your Favorite Bands",
+      "poster": "https://i.scdn.co/image/64ca6319f0592999a6145afcb39ecf4ca48be855",
+      "href": "https://api.spotify.com/v1/albums/1MuenT1cvvI0YCs3hsJDBE",
+      "rank": "15"
+    },
+    {
+      "name": "this",
+      "id": "B1Ui_ej4W"
+    },
+    {
+      "id": "1NFGnxmeIEBakre4DvLaJq",
+      "name": "Plans",
+      "poster": "https://i.scdn.co/image/3e5e3d76c8f50393a6494a1c8bea1a01178a8753",
+      "href": "https://api.spotify.com/v1/albums/1NFGnxmeIEBakre4DvLaJq"
+    },
+    {
+      "id": "5MkvE4fgTdjQMEyVYZCdCk",
+      "name": "Louder Now (U.S. Version)",
+      "poster": "https://i.scdn.co/image/cbceb21da32434750badfc551cac8f70f3b9fb6f",
+      "href": "https://api.spotify.com/v1/albums/5MkvE4fgTdjQMEyVYZCdCk"
+    }
+  ]
 }
